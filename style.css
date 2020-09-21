@@ -1,0 +1,29 @@
+
+body{
+    font-family: 'Play', sans-serif;
+}
+
+
+#logo{
+    font-size: 30px !important;
+    margin: 0 auto !important;
+    
+    font-weight: bolder !important;
+    font-size: 40px !important;
+    
+}
+
+#clearSky{
+    font-style: italic;
+}
+
+.search-btn{
+    color: white;
+}
+
+#current-weather{
+    border: 2px dashed darkslategray;
+}
+
+
+
