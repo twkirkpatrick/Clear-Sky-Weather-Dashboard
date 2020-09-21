@@ -7,10 +7,15 @@ body{
 #logo{
     font-size: 30px !important;
     margin: 0 auto !important;
-    
+    word-spacing: 10px !important;
     font-weight: bolder !important;
     font-size: 40px !important;
-    
+
+}
+
+.moon{
+    font-size: 30px;
+    margin-left: 15px;
 }
 
 #clearSky{
