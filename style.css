@@ -1,6 +1,11 @@
 
 body{
     font-family: 'Play', sans-serif;
+    background-color: rgb(85, 83, 83);
+}
+
+.nav-style{
+    background-color: #F4C605 !important;
 }
 
 
@@ -22,9 +27,19 @@ body{
     font-style: italic;
 }
 
-.search-btn{
+#search-btn{
+    color: white;
+    background-color: #F4C605 !important;
+}
+
+.search-btn:hover{
+   
+}
+
+#search-font{
     color: white;
 }
+
 
 #current-weather{
     border: 2px dashed darkslategray;
