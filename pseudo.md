@@ -36,12 +36,14 @@ var APIKey = "6c280cb21fdeb9b935ffbeed4ff11c37";
          3. city added to search history 
 
          4. for each city searched:
+
+            
             ** city name
             ** date
             ** icon representing the weather
-            ** temperature
-            ** humidity
-            ** wind speed
+            ** TEMPERATURE
+            ** HUMIDITY
+            ** WIND SPEED
             **** UV INDEX (background color based on severity);
 
         5. When presented with 5 day forecast: 

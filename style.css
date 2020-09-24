@@ -42,7 +42,14 @@ body{
 
 
 #current-weather{
-    border: 2px dashed darkslategray;
+    border: 5px solid #F4C605 ;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.row-style{
+    margin-top: 20px;
 }
 
 
