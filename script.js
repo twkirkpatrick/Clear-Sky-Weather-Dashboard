@@ -13,12 +13,25 @@ $(document).ready(function(){
     var secondURL = "https://api.openweathermap.org/data/2.5/onecall?";
 
     $("#search-btn").on("click", function(){
+        
+        if($("#citySearch").val().trim() != ''){
+            runQuery(); 
+        }else{
+            alert("you must enter a city in the field");
+        }
 
-        $("#current-weather").empty();
 
-         city = $("#citySearch").val().trim();
+    }
 
-        if(city != ''){
+        
+
+        
+
+        function runQuery(){
+            
+
+            $("#current-weather").empty();
+
             var search = queryURL + city + units +  APIKey;
             console.log(queryURL);
 
@@ -27,7 +40,7 @@ $(document).ready(function(){
                 method: "GET"
               }).then(function(currentData){
 
-                    console.log(currentData); 
+                     
                     
 
                     
@@ -42,13 +55,12 @@ $(document).ready(function(){
                   }).then(function(oneCallData){
                     console.log(oneCallData);
                     console.log(secondURL);
-                    
-                    /* var timeStamp = oneCallData.current.dt; */
 
-                    /* var date = new Date(timeStamp * 1000); */
+                    var cityName = $("<h2>" + currentData.name + "</h2>");
 
+                    //button for city searched is dynamically created
+                   
                     
-                    var cityName = $("<h2>" + currentData.name + "</h2>");                    
                     var iconCode = oneCallData.current.weather[0].icon;
                     var iconURL = "http://openweathermap.org/img/w/" + iconCode + ".png";
                     var iconAppend = $("<img>").attr("src", iconURL);
@@ -87,63 +99,48 @@ $(document).ready(function(){
 
                     populateForecast();
 
-                    function populateForecast(){
-                        //Date
-                        //Weather Icon
-                        //Temp
-                        //Humidity
-
-                        //forecast starts at index 1
-
-                         
-                        var alteredArr = oneCallData.daily;
-
-                        console.log(alteredArr);
-
-                        alteredArr.shift();
-
-                        console.log(alteredArr);
-
-                        alteredArr.splice([5]);
-                        
-                        console.log(alteredArr);
+                }
 
 
-                         
 
 
-                        
 
-                        for(var i = 0; i < alteredArr.length; i++){
 
-                            var block = $("<div>");
 
-                            block.attr("class", "col");
 
-                            var temp = $("<p>").text(alteredArr[i].temp.day);
 
-                            block.append(temp);
 
-                            $("#forecastDiv .row").append(block)
-                        }
-                        
-                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+                   
                     
-                  })
+                  
 
                   
     
                 
-              })
-        } else{
-            alert("you must enter a city in the field");
-        }
+              
+        
 
         
 
 
 
-    })
+    
 
    
 
@@ -190,6 +187,47 @@ $(document).ready(function(){
 
 
 
+              function populateForecast(){
+                //Date
+                //Weather Icon
+                //Temp
+                //Humidity
+
+                //forecast starts at index 1
+
+                 
+                var alteredArr = oneCallData.daily;
+
+                console.log(alteredArr);
+
+                alteredArr.shift();
+
+                console.log(alteredArr);
+
+                alteredArr.splice([5]);
+                
+                console.log(alteredArr);
+
+
+                 
+
+
+                
+
+                for(var i = 0; i < alteredArr.length; i++){
+
+                    var block = $("<div>");
+
+                    block.attr("class", "col");
+
+                    var temp = $("<p>").text(alteredArr[i].temp.day);
+
+                    block.append(temp);
+
+                    $("#forecastDiv .row").append(block)
+                }
+                
+            }
 
 
 
@@ -243,5 +281,3 @@ $(document).ready(function(){
 
 
 
-
-});
