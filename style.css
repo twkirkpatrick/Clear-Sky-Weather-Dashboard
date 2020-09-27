@@ -1,11 +1,11 @@
 
 body{
-    font-family: 'Play', sans-serif;
-    background-color: rgb(85, 83, 83);
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(107, 103, 104);
 }
 
 .nav-style{
-    background-color: #F4C605 !important;
+    background-color: lightseagreen !important;
 }
 
 
@@ -29,7 +29,7 @@ body{
 
 #search-btn{
     color: white;
-    background-color: #F4C605 !important;
+    background-color: lightseagreen !important;
 }
 
 .search-btn:hover{
@@ -42,14 +42,60 @@ body{
 
 
 #current-weather{
-    border: 5px solid #F4C605 ;
     text-align: center;
     padding: 15px;
+    background-color:lightseagreen; 
+    border-radius: 15px;
+    margin-left: 30px;
     
+}
+
+h2{
+    font-size: 50px;
+    text-transform: underline;
 }
 
 .row-style{
     margin-top: 20px;
+}
+
+.col{
+    margin: 10px;
+    border-radius: 30px;
+    background-color: lightseagreen;
+    text-align: center;
+    padding: 15px;
+    
+    
+}
+
+.forecast-img{
+    width: 80px;
+    margin: 0 45px;
+    
+}
+
+h3{
+    color: white;
+}
+
+.cityHistory{
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: lightseagreen;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    list-style: none;
+    text-align: center;
+    width: 40%;
+}
+
+#clearHistory{
+    margin-left: 10px;
+    color: white;
+    background-color: lightseagreen !important;
 }
 
 

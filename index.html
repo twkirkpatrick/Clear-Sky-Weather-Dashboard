@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <nav class="navbar navbar-dark bg-primary nav-style">
@@ -23,16 +24,20 @@
                     <input type="text" class="form-control" placeholder="San Francisco..." id="citySearch">
                     <div class="input-group-append">
                       <button class="btn bg-primary" type="button" id="search-btn">Search</button>
+                      <button class = "btn bg-primary" id="clearHistory">Clear History</button>
                     </div>
                   </div>
+                  <ul id="history"></ul>
+                  
             </div>
-            <div class="col-md-8" id="current-weather">
+            <div class="col-md-6" id="current-weather">
                 
             </div>
         </div>
         <div class="row">
             <div class="col-md-12" id="forecastDiv">
-                <div class="row">
+                <h3>5 Day Forecast: </h3>
+                <div class="row historyRow">
                     
                 </div>
             </div>
@@ -41,6 +46,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script3.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
