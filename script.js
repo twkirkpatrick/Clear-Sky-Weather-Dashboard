@@ -60,7 +60,7 @@ $(document).ready(function () {
 
             var timeStamp = alteredArr[i].dt;
 
-            var date = moment(timeStamp * 1000).format("MMMM Do[,] YYYY");
+            var date = moment(timeStamp * 1000).format("dddd");
 
 
             block.append(date + "<br>");
