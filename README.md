@@ -1,15 +1,14 @@
 # Clear-Sky-Weather-Dashboard
 For this project, I built a weather dashboard application which displays the current weather of a city and it's 5 day forecast.  I utilized the OpenWeatherMap API to retrieve the necessary weather data.  This application also includes the use of local storage which gives users the ability to save their searched cities as well as dynamically created HTML and CSS powered by jQuery.  
-<hr>
+
 
 ## Technologies
-**HTML5**
-**CSS3**
-**JavaScript**
-**jQuery**
-**Moment.js**
+**HTML5** <br>
+**CSS3** <br>
+**JavaScript** <br>
+**jQuery** <br>
+**Moment.js** <br>
 **Bootstrap**
-<hr>
 
 ## User Story
 
@@ -38,7 +37,6 @@ THEN I am presented with the last searched city forecast
 
 ```
 
-<hr>
 
 ## Screenshots
 
