@@ -167,22 +167,17 @@ $(document).ready(function () {
         })
     }
 
-
-
     var history = JSON.parse(localStorage.getItem("history")) || [];
 
     if (history.length > 0) {
         runQuery(history[history.length - 1]);
     }
 
-
     for (let i = 0; i < history.length; i++) {
 
         makeRow(history[i])
 
     }
-
-
 
 
 });
