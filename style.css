@@ -23,18 +23,19 @@ body{
     font-size: 40px !important;
     color: white;
     font-family: 'Cardo', serif;
+    
 
 }
 
 .globe{
     font-size: 32px;
+    
 }
 
-
-
-#clearSky{
-    font-style: italic !important;
+.underline{
+    text-decoration: underline;
 }
+
 
 #search-btn{
     color: white;

@@ -54,7 +54,7 @@ $(document).ready(function () {
 
             var timeStamp = alteredArr[i].dt;
 
-            var date = moment(timeStamp * 1000).format("dddd");
+            var date = moment(timeStamp * 1000).format("MMMM Do[,] YYYY");
 
             block.append(date + "<br>");
             block.append(iconAppend);
